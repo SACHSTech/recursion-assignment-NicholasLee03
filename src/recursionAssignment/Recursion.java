@@ -52,5 +52,19 @@ public class Recursion{
 
   }
 
+  public static boolean array220(int[] intNums, int index){
+    
+    if (index == intNums.length-1) {
+      return false;
+    } 
+
+    if (intNums[index + 1] == intNums[index] * 10 || array220(intNums, index + 1)) {
+      return true;
+    } else { 
+      return false;
+    }
+    
+
+  }
 
 }
