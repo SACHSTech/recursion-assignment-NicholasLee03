@@ -22,9 +22,7 @@ public class Recursion{
     // Looks for the characters "hi" in the string
     else if(str.charAt(0) == 'h' && str.charAt(1) == 'i') {
       return 1 + Recursion.countHi(str.substring(1));
-    } 
-    
-    else {
+    } else {
       return 0 + Recursion.countHi(str.substring(1));
     }
 
