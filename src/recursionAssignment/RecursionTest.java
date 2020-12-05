@@ -23,7 +23,7 @@ public class RecursionTest{
   public void Test3(){
     assertEquals(0, Recursion.countHi("xuuuu"));
   }
-  */
+  
 
   @Test
   public void Test4(){
@@ -38,6 +38,12 @@ public class RecursionTest{
   @Test
   public void Test6(){
     assertEquals("3.14p", Recursion.changePi("pip"));
+  }
+  */
+
+  @Test
+  public void Test7(){
+    assertEquals(true, Recursion.array220(new int[] {1,2,20},0));
   }
 
 
