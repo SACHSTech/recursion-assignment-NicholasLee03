@@ -28,5 +28,19 @@ public class Recursion{
 
   }
 
+  public static String changePi(String str){
+
+    if (str.length() == 0 || str.length() == 1) {
+      return str;
+    }
+
+    else if (str.charAt(0) == 'p' && str.charAt(1) == 'i') {
+      return "3.14" + Recursion.changePi(str.substring(2));
+    } else {
+      return str.substring(0,1) + Recursion.changePi(str.substring(1));
+    }
+
+  }
+
 
 }
