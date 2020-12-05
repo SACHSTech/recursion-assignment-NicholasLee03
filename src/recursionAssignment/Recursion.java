@@ -13,8 +13,8 @@ public class Recursion{
   public static int countHi(String str){
 
     // Base Case
-    // If there is only one or zero characters left, the program returns 0
-    if (str.length() == 0 || str.length() == 1) {
+    // If there is only one character left, the program returns 0
+    if (str.length() == 1) {
       return 0;
     } 
     
@@ -52,12 +52,23 @@ public class Recursion{
 
   }
 
+  /**
+  * Given a array of ints, recursively checks for a number that is followed by a number that is ten times its value.
+  * 
+  * @param intNums The array of ints
+  * @param index The index of the array
+  * @return A boolean value  
+  */
   public static boolean array220(int[] intNums, int index){
     
+    // Base Case
+    // Returns false when the index reaches the length of the array minus one
     if (index == intNums.length-1) {
       return false;
     } 
 
+    // Recursive Call
+    // Checks the following number if it is a value multiplied by ten of the previous number
     if (intNums[index + 1] == intNums[index] * 10 || array220(intNums, index + 1)) {
       return true;
     } else { 

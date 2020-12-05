@@ -8,7 +8,6 @@ import recursionAssignment.Recursion;
 
 public class RecursionTest{
 
-  /*
   @Test
   public void Test1(){
     assertEquals(1, Recursion.countHi("xxhixx"));
@@ -39,7 +38,7 @@ public class RecursionTest{
   public void Test6(){
     assertEquals("3.14p", Recursion.changePi("pip"));
   }
-  */
+  
 
   @Test
   public void Test7(){
