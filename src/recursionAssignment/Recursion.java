@@ -28,12 +28,22 @@ public class Recursion{
 
   }
 
+  /**
+  * Given a string, recursively replaces all "pi" found in the string to "3.14"
+  * 
+  * @param str The string that is being read 
+  * @return The new string 
+  */
   public static String changePi(String str){
 
+    // Base Case
+    // If there is only one or zero characters left, the program returns the string
     if (str.length() == 0 || str.length() == 1) {
       return str;
     }
 
+    // Recursive Call 
+    // Looks for the characters "pi" in the string and replaces with "3.14"
     else if (str.charAt(0) == 'p' && str.charAt(1) == 'i') {
       return "3.14" + Recursion.changePi(str.substring(2));
     } else {
